@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout - Codec</title>
+</head>
+<body>
+    <div class="flex-row checkout-navbar ">
+        <h2>Codec</h2>
+    </div>
+    <div class="flex-col center-margin checkout-page">
+        <div class="flex-row checkout-page-main">
+<!-- Details section -->
+            <div class="flex-col details-section checkout-page-section">
+                <div class="flex-col detail-container">
+                    <h2>Contact</h2>
+                    <input type="text" placeholder="Email">
+                    <label for="pingEmail">
+                        <input name="pingEmail" type="checkbox" value="">
+                        Email me with news and offers
+                    </label>
+                </div>
+                <div class="flex-col detail-container">
+                    <h2>Delivery</h2>
+                    <input type="text" placeholder="Country/Region">
+                    <div class="flex-row input-row">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Second name">
+                    </div>
+                    <input type="text" placeholder="Company (optional)">
+                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="Appartment, suite, etc. (optional)">
+                    <div class="flex-row input-row-3">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="ZIP code">
+                    </div>
+                    <input type="text" placeholder="Phone (optional)">
+                    <label for="pingPhone">
+                        <input name="pingPhone" type="checkbox" value="">
+                        Email me with news and offers
+                    </label>
+                </div>
+                <div class="flex-col detail-container">
+                    <h2>Payment</h2>
+                    <div class="flex-col creditInput">
+                        <span>Credit card</span>
+                        <div class="flex-col detail-container">
+                            <input type="text" placeholder="Card number">
+                            <div class="flex-row input-row">
+                                <input type="text" placeholder="Expiration date (MM / YY)">
+                                <input type="text" placeholder="Security code">
+                            </div>
+                            <input type="text" placeholder="Name on card">
+                        </div>
+                    </div>
+                </div>
+                <label for="billingAddress">
+                    <input name="billingAddress" type="checkbox" value="">
+                    Use shipping address as billing address
+                </label>
+                <input type="button" value="PAY NOW" id="payNow">
+                
+            </div>
+<!-- CART SECTION -->
+            <div class="flex-col cart-section checkout-page-section">
+                <div class="flex-row cart-items-container">
+                    <div class="flex-row cart-item space-between">
+                        <div class="flex-row item-detail">
+                            <img src="res/codec.png" width="32" class="icon-item">
+                            <span>Codec - Studio Version</span>
+                        </div>
+
+                        <div>$6.00</div>
+                    </div>
+                </div>
+                <div class="flex-row space-between">
+                    <span>Subtotal</span>
+                    <span>$6.00</span>
+                </div>
+                <div class="flex-row space-between">
+                    <h3>Total</h3>
+                    <h3>$6.00</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
